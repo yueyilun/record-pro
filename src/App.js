@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './pages/Layout';
+// import Login from './pages/Login';
+import Test from './pages/Test';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // 路由配置
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          {/* 创建路由path和组件对应关系 */}
+          <Route path='/layout' element={<Layout />}></Route>
+          <Route path='/' element={<Login />}></Route>
+          {/* <Route path='/' element={<Test />}></Route> */}
+
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
