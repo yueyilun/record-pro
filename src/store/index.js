@@ -3,11 +3,12 @@
 import React from "react"
 import LoginStore from "./loginStore"
 import TestGET from "./testGET"
+import SignupStore from "./signupStore"
 class RootStore {
     constructor() {
         this.loginStore = new LoginStore()
         this.testGET = new TestGET()
-
+        this.signupStore = new SignupStore()
         // ...
     }
 }

@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout';
-// import Login from './pages/Login';
-import Test from './pages/Test';
+import Login from './pages/Login';
+// import Test from './pages/Test';
+import Signup from './pages/Signup'
 
 import './App.css';
 
@@ -12,8 +13,9 @@ function App() {
       <div className="App">
         <Routes>
           {/* 创建路由path和组件对应关系 */}
-          <Route path='/layout' element={<Layout />}></Route>
-          <Route path='/' element={<Login />}></Route>
+          <Route path='/' element={<Layout />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/signup' element={<Signup />}></Route>
           {/* <Route path='/' element={<Test />}></Route> */}
 
         </Routes>
