@@ -17,7 +17,7 @@ class SignupStore {
             username,phonenumber,password,password2
         })
         // 存入token
-        this.token = res.data.data.token
+        this.token = res.data.token
     }
 }
 

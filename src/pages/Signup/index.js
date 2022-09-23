@@ -13,11 +13,11 @@ const Signup = () => {
   const { signupStore } = useStore()
   // 这个导航函数可以完成跳转
   const navigate = useNavigate()
-  const onFinish = values => {
+  const onFinish = async values => {
     console.log(values)
     // values:放置的是所有表单项中用户输入的内容
     // todo：登录
-    signupStore.getToken({
+    await signupStore.getToken({
       username:values.username,
       phonenumber:values.phonenumber,
       password:values.password,
