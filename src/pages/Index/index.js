@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import {Link} from 'react-router-dom'
 import React from 'react';
 import './index.scss'
 
@@ -7,7 +7,9 @@ function Index() {
     <>
     <div className='root'>
       <div className='parent' >
-        <div className='div1'>佛</div>
+        <div className='div1'>
+          <Link to='/fo'>佛</Link>
+        </div>
         <div className='div1'>医</div>
       </div>
       <div className='parent'>
